@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400&family=Yanone+Kaffeesatz&display=swap');
+
+*{
+margin: 0;
+padding:0;
+box-sizing: border-box;
+
+}
+img{
+    border-radius: 8px;
+}
+
+.logo img {
+width: 100px;
+height: 100px;
+float: right;
+}
+
+body{
+    font-family: 'El Messiri', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1366px;
+    height: 10vh;
+    margin: 0 auto;
+    padding: 0 5rem;
+}
+
+nav .logo {
+    display: flex;
+    font-size: 1.5rem;
+    align-items: center;
+}
+
+nav .nav-item {
+    display: flex; /* to be next to each other*/
+    list-style-type: none; /* to remove the Dots*/
+}
+
+nav .nav-item .nav-items {
+    padding: 0 1rem;
+}
+
+nav .nav-link{
+    text-decoration: none; /* remove underline*/
+    color: #4e547e;
+    font-size: 1.4rem;
+}
+
+nav .nav-link:hover{
+    color: green;
+}
+/*HERO SECTION*/
+
+.hero{
+    background-color: #f8f7fc;
+}
+
+.hero-section{
+    max-width: 1366px;/* max width range when i change the page size*/
+    height: 90vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 5rem;
+}
+
+.hero-section .content {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-section h4{
+    color: green;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+.hero-section .content h1{
+    font-size: 2.6rem;
+    margin-bottom: 1rem;
+}
+
+.hero-section p{
+    color: rgb(29, 29, 29);
+    font-size: 1.4rem;
+}
+
+.hero-section p span {
+    color: green;
+}
+
+.btn {
+    width: 10rem;
+    margin-top: 3rem;
+    border-radius: 0.5rem;
+    outline: none;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    background-color: green;
+}
+
+.btn:hover {
+    background-color: greenyellow;
+    cursor: pointer; /* change shape of mouse(pointer)*/
+}
+
+.btn a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.4rem;
+    font-family: 'El Messiri', sans-serif;
+}
+
+/* FEATURES SECTION*/
+
+section.feature{
+    padding: 2rem 0;
+    background-color: #f8f7fc;
+}
+
+section.feature .feature-section {
+    max-width: 1366px;
+    margin: 0 auto;
+    padding: 0 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.feature-section h4 {
+    color: green;
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+}
+
+.feature-section .qualities{
+    display: flex;
+    justify-content: space-between;
+}
+
+.feature-section .qualities .quality{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 2rem;
+    max-width: 17rem;
+    border-radius: 1rem;
+    margin: 1rem;
+    box-shadow:rgba(0,0,0,0.1) 0px 4px 12px;
+}
+
+.feature-section .qualities .quality:hover {
+    border: 2px solid greenyellow;
+}
+
+.qualities .quality i {
+    font-size: 2rem;
+    color: green;
+    margin-bottom: 1rem;
+}
+
+.qualities .quality h3{
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+.qualities .quality p{
+    font-size: 1.2rem;
+    text-align: center;
+    color: #4e547e;
+}
+
+.newest-animals {
+    padding-top: 5rem;
+}
+
+.newest-animals .animals-section{
+    max-width: 1366px;
+    margin: 0 auto;
+    padding: 0 5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.animals-section h4{
+    color: green;
+    font-size: 1.6rem;
+    margin-bottom:2rem;
+}
+
+.animals-section .animals{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: flex-start;
+}
+
+.animals .animal{
+    margin: 2rem 0;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+.edit-img {
+    width:100%;
+    height: 150%;
+   
+}
+
+.animal img{
+    margin-bottom: 1rem;
+}
+
+.animal img.hover{
+    scale: 1.1;
+    cursor: pointer;
+}
+
+.animal h3{
+    font-size: 1.6rem;
+}
+.animals-section button{
+    width: 15rem;
+    margin-bottom: 1rem;
+    align-self: center;
+}
+
+/* footer section*/
+
+footer{
+    background-color: #f8f7fc;
+    height: 15vh;
+    margin-top: 5rem;
+    padding: 2rem 0;
+}
+
+.footer-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1366px;
+    margin: 0 auto;
+    padding: 0 5rem;
+}
+
+
+.footer-section p{
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.footer-section .socials{
+    margin-bottom: 1rem;
+}
+
+.footer-section .socials i{
+    padding: 0 0.5rem;
+    font-size: 1.6rem;
+}
+
+.footer-section .socials i:hover {
+    color: green;
+    cursor: pointer;
+}
+
+
+@media (max-width: 1300px){
+    *{
+        font-size: 85%;
+    }
+}
+
+@media (max-width: 1170px){
+    *{
+        font-size: 80%;
+    }
+}
+
+@media (max-width: 1000px){
+    *{
+        text-align: center;
+    }
+    .hero img {
+        display: none;
+    }
+    .hero section {
+        align-items: center;
+        padding: 2rem 0;
+        width: 50%;
+    }
+    .hero .btn{
+        align-self: center;
+    }
+
+    .feature-section .qualities {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    section.features .features-section{
+        align-items: center;
+    }
+
+    .hero-section{
+        height: 50vh;
+    }
+
+    
+}
+
